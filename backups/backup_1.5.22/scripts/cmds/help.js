@@ -12,7 +12,7 @@ const doNotDelete = "天 | 𝙔𝘼𝙕𝙆𝙔 𝘼𝙄";
 
 module.exports = {
         config: {
-                name: "help",
+                name: "cmdlist",
                 version: "1.17",
                 author: "NTKhang",//Modified By Zedric
                 countDown: 5,
