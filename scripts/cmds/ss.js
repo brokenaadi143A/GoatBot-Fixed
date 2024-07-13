@@ -1,4 +1,4 @@
-cconst { getPrefix, getStreamFromURL, uploadImgbb } = global.utils;
+const { getPrefix, getStreamFromURL, uploadImgbb } = global.utils;
 async function ai({ message: m, event: e, args: a, usersData: u, commandName }) {
   var p = [`${await getPrefix(e.threadID)}${this.config.name}`, 
 `${this.config.name}`
