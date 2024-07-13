@@ -1,5 +1,5 @@
 const axios = require("axios");
-const APIKEY = "ADD_HERE_API_KEY"; //Add here goatmart apikey if you don't have then ask to Aryan for apikey
+const APIKEY = "x-store-evfeh65-u6tgv-vttu-x"; //Add here goatmart apikey if you don't have then ask to Aryan for apikey
 
 module.exports = {
   config: {
