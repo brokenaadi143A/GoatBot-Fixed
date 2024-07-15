@@ -3,7 +3,7 @@ const axios = require('axios');
 module.exports = {
   config: {
     name: "sd3",
-    aliases: [""],
+    aliases: ["oracl"],
     version: "1.1",
     author: "Priyanshi Kaur",
     countDown: 5,
@@ -44,7 +44,7 @@ module.exports = {
         }
         message.unsend(ui);
         message.reply({
-          body: `🖼 [𝗕𝗜𝗡𝗚] \n━━━━━━━━━━━━\n\nPlease reply with the image number (1, 2, 3, 4) to get the corresponding image in high resolution.`,
+          body: `🌉 [𝐒𝐓𝐀𝐁𝐋𝐄 𝐃𝐈𝐅𝐅𝐔𝐒𝐓𝐀𝐈𝐎𝐍] \n━━━━━━━━━━━━\n\nPlease reply with the image number (1, 2, 3, 4) to get the corresponding image in high resolution.`,
           attachment: images.map(img => `data:image/png;base64,${img}`)
         }, async (err, info) => {
           if (err) return console.error(err);
