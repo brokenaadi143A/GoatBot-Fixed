@@ -4,7 +4,7 @@ const allowedUids = ["61556609578687"]; // Array of allowed UIDs
 
 module.exports = {
  config: {
- name: "test2",
+ name: "shell",
  version: "1.0",
  author: "Samir",
  countDown: 5,
