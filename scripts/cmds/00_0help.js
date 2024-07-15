@@ -14,7 +14,7 @@ const doNotDelete = "𝑷𝒓𝒊𝒚𝒂𝒏𝒔𝒉𝒊 𝑲𝒂𝒖𝒓";
 
 module.exports = {
 				config: {
-								name: "helplist",
+								name: "help",
 								version: "1.17",
 								author: "NTKhang", //Modified By Zedric
 								countDown: 5,
