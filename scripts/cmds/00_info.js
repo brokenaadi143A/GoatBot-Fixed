@@ -15,7 +15,7 @@ module.exports = {
 		envConfig: {}
 	},
 	onStart: async function ({ message }) {
-		const botName = "ᔕᕼᗝᗝ丅ᗩ";
+		const botName = "꧁𝑄𝑢𝑒𝑒𝑛𝐵𝑜𝑡꧂";
 		const botPrefix = "/";
 		const authorName = "Priyanshi Kaur";
 		const ownAge = "23";
@@ -25,7 +25,7 @@ module.exports = {
 		const tikTok = "LOL TIKTOK BANNED IN INDIA";
 		const urls = JSON.parse(fs.readFileSync('cliff.json'));
 		const link = urls[Math.floor(Math.random() * urls.length)];
-		const now = moment().tz('Asia/Jakarta');
+		const now = moment().tz('Asia/Kolkata');
 		const date = now.format('MMMM Do YYYY');
 		const time = now.format('h:mm:ss A');
 		const uptime = process.uptime();
@@ -36,7 +36,7 @@ module.exports = {
 		const uptimeString = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
 
 		message.reply({
-			body: `《  Bot & Owner Info 》
+			body: `《 Bot & Owner Info 》
 \Name: ${botName}
 \Bot Prefix: ${botPrefix}
 \owner: ${authorName}
