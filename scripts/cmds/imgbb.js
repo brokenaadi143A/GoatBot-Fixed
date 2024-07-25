@@ -1,51 +1,46 @@
-const fetch = require('node-fetch');
+const axios = require('axios');
+const FormData = require('form-data');
 
 module.exports = {
-	config: {
-		name: "imgbb",
-		version: "1.0",
-		author: "Samir Œ",
-		countDown: 5,
-		role: 0,
-		shortDescription: "Upload an image to imgbb",
-		longDescription: "Upload an image to imgbb",
-		category: "utility",
-		guide: "{pn} <attached image>"
-	},
+  config: {
+    name: "imgbb",
+    version: "1.0",
+    author: "Priyanshi Kaur", // Do not change author name
+    countDown: 1,
+    role: 0,
+    longDescription: "Upload image to ImgBB",
+    category: "utility",
+    guide: {
+      en: "${pn} reply to image"
+    }
+  },
 
-	onStart: async function ({ message, event }) {
-		try {
-			const attachments = event.messageReply.attachments;
-			if (!attachments || attachments.length === 0) {
-				return message.reply("Please reply to a message with an attached image to upload.");
-			}
+  onStart: async function ({ message, api, event }) {
+    const imgbbApiKey = "74a35e5d09c0173084be33cefb1e4fea"; // Your ImgBB API key
 
-			const imageUrl = attachments[0].url;
+    const linkanh = event.messageReply?.attachments[0]?.url;
 
-			const uploadUrl = 'https://api-samir.onrender.com/upload';
-			const data = { file: imageUrl };
+    if (!linkanh) {
+      return message.reply('Please reply to an image.');
+    }
 
-			const response = await fetch(uploadUrl, {
-				method: 'POST',
-				headers: {
-					'Accept': 'application/json',
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify(data)
-			});
+    try {
+      const response = await axios.get(linkanh, { responseType: 'arraybuffer' });
+      const formData = new FormData();
+      formData.append('image', Buffer.from(response.data, 'binary'), { filename: 'image.png' });
 
-			const result = await response.json();
+      const res = await axios.post('https://api.imgbb.com/1/upload', formData, { // Correct API endpoint
+        headers: formData.getHeaders(),
+        params: {
+          key: imgbbApiKey
+        }
+      });
 
-			if (result && result.image && result.image.url) {
-				const cleanImageUrl = result.image.url.split('-')[0]; 
-
-				message.reply({body: `${cleanImageUrl}.jpg`})
-			} else {
-				message.reply("Failed to upload the image to imgbb.");
-			}
-		} catch (error) {
-			console.error('Error:', error);
-			message.reply(`Error: ${error}`);
-		}
-	}
+      const imageLink = res.data.data.url;
+      return message.reply(imageLink);
+    } catch (error) {
+      console.error(error);
+      return message.reply('Failed to upload image to ImgBB.');
+    }
+  }
 };
