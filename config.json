@@ -17,11 +17,11 @@
     "ignoreCommand": []
   },
   "adminBot": [
-    "61556609578687",
-    "100037743553265",
-    "",
-    "100057308119335",
-		"61557439091041"
+    "YOUR_UID",
+    "YOUR_SECOND_UID",
+    "YOUR_THIRD_UID",
+    "YOUR_FOURTH_UID",
+		"YOUR_FIFTH_UID"
   ],
   "whiteListMode": {
     "enable": false,
@@ -31,9 +31,9 @@
   "OWNER": "Priyanshi Kaur",
   "AGE": "24",
   "GENDER": "FEMALE",
-  "nickNameBot": "꧁𝑄𝑢𝑒𝑒𝑛𝑃𝑟𝑜꧂",
+  "nickNameBot": "⍟🄺🄸🄽🄶🄱🄾🅃㋛︎",
   "FACEBOOK": "https://www.facebook.com/PriyanshiKaurJi",
-  "prefix": ".",
+  "prefix": "/",
   "database": {
     "type": "sqlite",
     "uriMongodb": "",
