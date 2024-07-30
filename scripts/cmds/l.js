@@ -4,7 +4,7 @@ const path = require('path');
 
 const chatHistoryDir = 'groqllama70b';
 // Replace with your actual API key (stored securely, e.g., in environment variable)
-const apiKey = process.env.GROQ_API_KEY || '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';
+const apiKey = process.env.GROQ_API_KEY || 'YOUR_API_KEY_HERE'; //Contact Priyanshi Kaur For Key.
 
 const groq = new Groq({ apiKey });
 
