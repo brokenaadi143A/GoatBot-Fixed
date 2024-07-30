@@ -17,10 +17,10 @@ module.exports = {
 	onStart: async function ({ api, event }) {
 		try {
 			const ownerInfo = {
-				name: '𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡𝐢 𝐊𝐚𝐮𝐫',
-				gender: '𝐅𝐞𝐦𝐥𝐞',
-				hobby: '𝐆𝐮𝐧 𝐅𝐢𝐫𝐢𝐧𝐠 𝐀𝐧𝐝 𝐌𝐮𝐬𝐢𝐜',
-				Fb: 'https://facebook.com/PriyanshiKaurJi',
+				name: '𝐀𝐲𝐮𝐬𝐡 𝐒𝐡𝐮𝐤𝐥𝐚',
+				gender: '𝐌𝐚𝐥𝐞',
+				hobby: '𝐂𝐨𝐝𝐢𝐧𝐠 𝐀𝐧𝐝 𝐌𝐮𝐬𝐢𝐜',
+				Fb: 'https://www.facebook.com/profile.php?id=100042292561861',
 				Relationship: '𝐂𝐫𝐮𝐬𝐡',
 				bio: '𝐖𝐨𝐫𝐥𝐝 𝐈𝐬 𝐅𝐮𝐥𝐥 𝐎𝐟 𝐖𝐨𝐧𝐝𝐞𝐫𝐬. 𝐑𝐢𝐠𝐡𝐭'
 			};
