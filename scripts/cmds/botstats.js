@@ -23,8 +23,8 @@ module.exports = {
 
       const uptimeString = `${hours}:${minutes}:${seconds}`;
 
-      const currentDate = moment().tz('Asia/Manila').format('YYYY-MM-DD');
-      const currentTime = moment().tz('Asia/Manila').format('HH:mm:ss');
+      const currentDate = moment().tz('Asia/Kolkata').format('DD-MM-YYYY');
+      const currentTime = moment().tz('Asia/Kolkata').format('HH:mm:ss');
 
     const output2 = `\nBOT STATS\n\nbot running: ${uptimeString}\ncurrent time: ${currentTime}\ncurrent date: ${currentDate}`;
 
