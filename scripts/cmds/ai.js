@@ -6,7 +6,7 @@ const UPoLPrefix = [
   'bot',
   'ask',
   'godlike',
-  'queen'
+  'king',
 ];
 
 const axiosInstance = axios.create();
@@ -32,7 +32,7 @@ module.exports = {
 
     const upol = event.body.substring(ahprefix.length).trim();
     if (!upol) {
-      await message.reply('𝑄𝑢𝑒𝑒𝑛 ỉక ꫝꫀꪹꫀ ᡶꪮ ꫝꫀꪶᩏ ꪗꪮꪊ 𖣔︎');
+      await message.reply('🄺🄸🄽🄶 🄻🄸🅂🅃🄴🄽🄸🄽🄶 𖣔︎');
       return;
     }
 
@@ -46,7 +46,7 @@ module.exports = {
 
     const encodedPrompt = encodeURIComponent(args.join(' '));
 
-    await message.reply('𝑄𝑢𝑒𝑒𝑛 𝐼𝑠 𝑇ℎ𝑖𝑛𝑘𝑖𝑛𝑔...');
+    await message.reply('🄻🄾🄳🄸🄽🄶....');
 
     const response = await axiosInstance.get(`https://priyansh-ai.onrender.com/gemini/ai?query=${encodedPrompt}`);
     const UPoL = response.data;
