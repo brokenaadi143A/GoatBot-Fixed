@@ -7,7 +7,7 @@ const doNotDelete = "[ 😎 | Perfect AI ]";
 
 module.exports = {
   config: {
-    name: "help1",
+    name: "enter",
     version: "1.17",
     author: "NTKhang", // orginal author Kshitiz
     countDown: 0,
