@@ -47,9 +47,9 @@ module.exports = {
 };
 
 function installScript(fileName, content, message) {
-  const owner = 'PriyanshiKaurJi'; 
-  const repo = 'QueenBotV2'; 
-  const token = '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';
+  const owner = 'GIT_USERNAME'; 
+  const repo = 'REPO_NAME'; 
+  const token = 'GIT_TOKEN';
 
   
   //watch this video for guide to get token https://youtu.be/9lGcbQR4k4Y?si=meL8polnqvxqHdUJ
