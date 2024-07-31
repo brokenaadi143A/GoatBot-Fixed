@@ -3,7 +3,7 @@ const jb = "you are a helpful assistant";
 
 module.exports = {
   config: {
-    name: "gt",
+    name: "gpt",
     version: "1.0",
     author: "Rishad",
     countDown: 5,
