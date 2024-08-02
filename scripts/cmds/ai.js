@@ -3,6 +3,7 @@ const axios = require('axios');
 const PriyaPrefix = [
   'queen',
   'ai',
+  '.ai', //Add Your Prefix Here
 ];
 
 const axiosInstance = axios.create();
