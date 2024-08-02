@@ -15,15 +15,15 @@ module.exports = {
 		envConfig: {}
 	},
 	onStart: async function ({ message }) {
-		const botName = "🄺🄸🄽🄶♕︎";
+		const botName = "BOT NAME";
 		const botPrefix = "/";
-		const authorName = "Ayush Shukla";
-		const ownAge = "22";
+		const authorName = "YOUR NAME";
+		const ownAge = "YOUR AGE";
 		const teamName = "Team Priyanshi";
-		const authorFB = "https://www.facebook.com/profile.php?id=100042292561861";
+		const authorFB = "YOUR FB LINK";
 		const authorInsta = "YOUR_INSTA_USERNAME_HERE";
 		const tikTok = "YOUR_TIKTOK_USERNAME_HERE";
-		const urls = JSON.parse(fs.readFileSync('cliff.json'));
+		const urls = JSON.parse(fs.readFileSync('priyanshi.json'));
 		const link = urls[Math.floor(Math.random() * urls.length)];
 		const now = moment().tz('Asia/Kolkata');
 		const date = now.format('MMMM Do YYYY');
