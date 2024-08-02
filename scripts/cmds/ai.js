@@ -10,7 +10,7 @@ const axiosInstance = axios.create();
 module.exports = {
   config: {
     name: 'ai',
-    version: '1.2.1',
+    version: '2.1.0',
     role: 0,
     category: 'AI',
     author: 'Priyanshi || Priyansh',
