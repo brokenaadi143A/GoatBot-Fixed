@@ -1,12 +1,8 @@
 const axios = require('axios');
-const UPoLPrefix = [
-  '*ai',
+
+const PriyaPrefix = [
+  'queen',
   'ai',
-  '.ai',
-  'bot',
-  'ask',
-  'godlike',
-  'king',
 ];
 
 const axiosInstance = axios.create();
@@ -17,22 +13,21 @@ module.exports = {
     version: '1.2.1',
     role: 0,
     category: 'AI',
-    author: 'UPoL/Priyanshi',
-//API Author Priyansh Rajput
+    author: 'Priyanshi || Priyansh',
     shortDescription: '',
     longDescription: '',
   },
 
   onStart: async function () {},
   onChat: async function ({ message, event, args, api, threadID, messageID }) {
-    const ahprefix = UPoLPrefix.find((p) => event.body && event.body.toLowerCase().startsWith(p));
+    const ahprefix = PriyaPrefix.find((p) => event.body && event.body.toLowerCase().startsWith(p));
     if (!ahprefix) {
       return;
     }
 
-    const upol = event.body.substring(ahprefix.length).trim();
-    if (!upol) {
-      await message.reply('🄺🄸🄽🄶 🄻🄸🅂🅃🄴🄽🄸🄽🄶 𖣔︎');
+    const priya = event.body.substring(ahprefix.length).trim();
+    if (!priya) {
+      await message.reply('𝑄𝑢𝑒𝑒𝑛 𝐼𝑠 𝐻𝑒𝑟𝑒 𝑇𝑜 𝐻𝑒𝑙𝑝 𝑌𝑜𝑢 ✪');
       return;
     }
 
@@ -46,12 +41,12 @@ module.exports = {
 
     const encodedPrompt = encodeURIComponent(args.join(' '));
 
-    await message.reply('🄻🄾🄳🄸🄽🄶....');
+    await message.reply('𝚀𝚞𝚎𝚎𝚗 𝚃𝚑𝚒𝚗𝚔𝚒𝚗𝚐.....');
 
     const response = await axiosInstance.get(`https://priyansh-ai.onrender.com/gemini/ai?query=${encodedPrompt}`);
-    const UPoL = response.data;
-    const upolres = `${UPoL}`;
+    const Priya = response.data;
+    const priyares = `${Priya}`;
 
-    message.reply(upolres);
+    message.reply(priyares);
   }
 };
