@@ -14,8 +14,8 @@ module.exports = {
     role: 0,
     category: 'AI',
     author: 'Priyanshi || Priyansh',
-    shortDescription: '',
-    longDescription: '',
+    shortDescription: 'Artificial Intelligence',
+    longDescription: 'Ask Anything To Ai For Your Answers',
   },
 
   onStart: async function () {},
